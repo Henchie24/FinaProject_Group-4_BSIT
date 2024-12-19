@@ -164,7 +164,7 @@ while True:
 
         #EASY DIFFICULTY SURVIVAL
         if difficulty == 1:
-            lives += 1
+            lives += 15
             word_answer = random.choice(easylist)
             print(f"\n====================\n\nGAME START!\nLife Points: {lives}")
 
