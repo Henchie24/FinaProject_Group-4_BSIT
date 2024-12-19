@@ -114,7 +114,7 @@ while True:
 
         print(f"\n====================\nGAME START!\nYour Current life: {lives}")
         while True:
-            print(word_answer)
+            #print(word_answer)
             print(f"Letters in the word: {len(word_answer)}")
             attempt = str.lower(input("\nWhat will be your answer?: "))
 
