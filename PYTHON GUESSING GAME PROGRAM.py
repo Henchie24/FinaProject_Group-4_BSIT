@@ -166,8 +166,7 @@ while True:
         if difficulty == 1:
             lives += 15
             word_answer = random.choice(easylist)
-            print(f"\n====================\n\nGAME START!\nLife Points: {lives}")
-
+            
         #HARDLIST SURVIVAL
         elif difficulty == 2:
             lives += 12
@@ -182,15 +181,15 @@ while True:
         elif difficulty == 4:
             word_answer = random.choice(impossiblelist)
             lives += 6
-            print(f"\n====================\n\nGAME START!\nLife Points: {lives}")
 
         else:
                 print("Invalid Difficulty.")
                 break
-        
+
+        print(f"\n====================\n\nGAME START!\nLife Points: {lives}")
         while True:
             print(f"Letters in the word: {len(word_answer)}\n")
-            print(word_answer)
+            #print(word_answer)
             attempt = str.lower(input("What will be your answer?: "))
 
             if len(attempt) != len(word_answer): 
